@@ -1,7 +1,7 @@
 ---
 title: "Some quotes and some thoughts on quotes"
 date: 2022-11-07
-permalink: /guilty/
+permalink: /quotes/
 ---
 
 Firstly, some thoughts on quotes.
