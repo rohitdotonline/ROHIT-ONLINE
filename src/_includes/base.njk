@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+  <title>{% if title %}{{ title }} | {% endif %}Rohit Kumar</title>
+  
+  <meta name="description" content="{% if description %}{{ description }}{% else %}A personal website{% endif %}">
+  <link rel="canonical" href="https://rohit.online">
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="{% if title %}{{ title }} | {% endif %}Rohit Kumar">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+  
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/atom+xml" href="/feed/">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="(function() { document.cookie = `timezone=${Intl.DateTimeFormat().resolvedOptions().timeZone};path=/`; })()">
+  <header>
+    <a class="title" href="/">
+      <h1>Rohit Kumar</h1>
+    </a>
+    <nav>
+      <p><a href='/'>Home</a> <a href='/blog/'>Blog</a> <a href='/about/'>About</a> <a href='/now/'>Now</a></p>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content | safe }}
+  </main>
+</body>
+</html> 
